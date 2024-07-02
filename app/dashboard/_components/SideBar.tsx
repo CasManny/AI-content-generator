@@ -30,7 +30,7 @@ const SideBar = () => {
     },
   ];
   return (
-    <div className="h-screen p-5 shadow-sm border">
+    <div className="h-screen p-5 shadow-sm border bg-white">
       <div className="flex justify-center">
         <Image src='/ai.png' width={60} height={5} alt="ai" />
       </div>
