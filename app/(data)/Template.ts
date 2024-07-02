@@ -47,7 +47,7 @@ export const templateFormat = [
     name: "Social Media Post",
     desc: "An AI tool that generates social media posts based on provided content ideas",
     category: "Social Media",
-    icon: "social_media_post.png",
+    icon: "/social_media_post.png",
     aiPrompt:
       "Create an engaging social media post in 150 characters or less based on the provided topic and tone.",
     slug: "generate-social-media-post",
@@ -117,7 +117,7 @@ export const templateFormat = [
     name: "Video Script Outline",
     desc: "An AI tool that generates a video script outline based on the provided video idea",
     category: "Video Production",
-    icon: "video_script_outline.png",
+    icon: "/video_script_outline.png",
     aiPrompt:
       "Create a detailed video script outline based on the provided video idea and target audience.",
     slug: "generate-video-script-outline",

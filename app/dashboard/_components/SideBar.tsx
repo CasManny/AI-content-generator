@@ -1,12 +1,12 @@
 "use client";
 import { FileClock, Home, Settings, WalletCards } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
 const SideBar = () => {
   const path = usePathname();
-  console.log(path);
   const menuList = [
     {
       name: "Home",
@@ -32,7 +32,7 @@ const SideBar = () => {
   return (
     <div className="h-screen p-5 shadow-sm border">
       <div className="flex justify-center">
-        <h1>AI-Con</h1>
+        <Image src='/ai.png' width={60} height={5} alt="ai" />
       </div>
       <hr className=" my-6 border" />
       <div className="mt-3">
