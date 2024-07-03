@@ -1,10 +1,19 @@
-import {
+/*
+ * Install the Generative AI SDK
+ *
+ * $ npm install @google/generative-ai
+ *
+ * See the getting started guide for more information
+ * https://ai.google.dev/gemini-api/docs/get-started/node
+ */
+
+const {
   GoogleGenerativeAI,
   HarmCategory,
   HarmBlockThreshold,
-} from "@google/generative-ai"
+} = require("@google/generative-ai");
 
-const apiKey: any = process.env.GEMINI_API_KEY;
+const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
@@ -26,6 +35,4 @@ const generationConfig = {
     history: [],
   });
 
-//   const result = await chatSession.sendMessage("INSERT_INPUT_HERE");
-//   console.log(result.response.text());
-
+ 
