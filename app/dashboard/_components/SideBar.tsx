@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import UsageTrack from "./UsageTrack";
 
 const SideBar = () => {
   const path = usePathname();
@@ -30,7 +31,7 @@ const SideBar = () => {
     },
   ];
   return (
-    <div className="h-screen p-5 shadow-sm border bg-white">
+    <div className="h-screen p-5 shadow-sm border bg-white relative">
       <div className="flex justify-center">
         <Image src='/ai.png' width={60} height={5} alt="ai" />
       </div>
@@ -48,6 +49,9 @@ const SideBar = () => {
             <h2 className="text-lg font-semibold">{menu.name}</h2>
           </Link>
         ))}
+      </div>
+      <div className="absolute bottom-10 left-0 w-full">
+        <UsageTrack />
       </div>
     </div>
   );

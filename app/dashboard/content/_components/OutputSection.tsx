@@ -25,7 +25,6 @@ const OutputSection = ({aiOutput}: { aiOutput: string}) => {
               height="600px"
               useCommandShortcut={true}
               ref={editorRef}
-              onChange={() => console.log(editorRef.current.getInstance().getMarkdown())}
       />
     </div>
   );

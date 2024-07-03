@@ -18,6 +18,7 @@ const DashboardLayout = ({
         {children}
       </div>
     </div>
+
   );
 };
 

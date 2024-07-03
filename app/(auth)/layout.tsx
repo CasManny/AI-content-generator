@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AI Content Generator",
-  description:
-    "Sign In and experience the amazing world of spontaneou content generation",
+  description: "Generating Content spontaneously using AI",
 };
 
 export default function RootLayout({
@@ -13,10 +12,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">
-        <section className="flex items-center justify-center h-screen">
+      <body>
+        <div className="flex h-screen justify-center items-center">
           {children}
-        </section>
+        </div>
       </body>
     </html>
   );

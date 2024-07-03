@@ -12,7 +12,8 @@ const aiOutputSchema = new mongoose.Schema({
     },
     creatorEmail: {
         type: String,
-        unique: true,
+        required: true,
+        unique: true
     },
     templateSlug: {
         type: String,
